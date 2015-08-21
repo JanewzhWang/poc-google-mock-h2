@@ -35,8 +35,8 @@ CREATE TABLE ZONES (
 );
 
 
-INSERT INTO PROJECTS(id, name, description) VALUES (1, 'titanium-vim-620', 'default dcm test project');
-INSERT INTO PROJECTS(id, name) VALUES (2, 'titanium-vim-660');
+INSERT INTO PROJECTS(id, name, description) VALUES (1, 'test-vim-120', 'default test project');
+INSERT INTO PROJECTS(id, name) VALUES (2, 'test-vim-126');
 INSERT INTO REGIONS(id, name, creationTimestamp, status, description, quotasJson, projectId) VALUES(1, 'asia-east1', NOW(), 'UP', 'asia-east1', '[{"metric": "INSTANCE_GROUP_MANAGERS", "limit": 50, "usage": 0}, {"metric": "INSTANCES", "limit": 240, "usage": 0}]', 1);
 INSERT INTO REGIONS(id, name, creationTimestamp, status, description, projectId) VALUES(2, 'asia-west1', NOW(), 'DOWN', 'asia-west1', 1);
 INSERT INTO ZONES(id, name, creationTimestamp, status, description, regionId, projectId, maintenanceWindowsJson) VALUES(1, 'asia-east1-a', NOW(), 'UP', 'asia-east1-a', 1, 1, '[{"name": "monthly", "description": "monthly maintenance stategy", "beginTime": "2014-07-15T10:44:08.663-07:00", "endTime": "2014-07-15T12:44:08.663-07:00"}]');
