@@ -8,20 +8,20 @@ Scala: 2.11.7
 Playframework: 2.4.x (with activator)
 
 ## 2. Compile and Run
-Compile and run poc-google-mock-h2 through play-activator.
-```cd <Root folder of poc-google-mock-h2>
-```activator
-Inside activator - Basic steps to run the application
-```clean
-```compile
-```run
+Compile and run poc-google-mock-h2 through play-activator:
+cd <Root folder of poc-google-mock-h2>
+activator
+Inside activator - Basic steps to run the application:
+clean
+compile
+run
 
 ## 3. Edit by IDE (eclipse or intellij)
 Inside project/plugins.sbt, sbt-eclipse and mpeltonen-idea have already been added to the plugins.
 Generate Eclipse Project:
-```eclipse
+eclipse
 Generate IntelliJ Project:
-```gen-idea
+gen-idea
 
 ## 4. Database configuration
 conf/application.conf
