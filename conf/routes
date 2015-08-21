@@ -1,0 +1,20 @@
+# Routes
+# This file defines all application routes (Higher priority routes first)
+# ~~~~
+
+# projects
+GET		/compute/v1/projects/:project					controllers.ProjectController.get(project: String)
+GET		/compute/v1/projects							controllers.ProjectController.list
+
+# regions
+GET		/compute/v1/projects/:project/regions/:region	controllers.RegionsController.get(project: String, region: String)
+GET		/compute/v1/projects/:project/regions			controllers.RegionsController.list(project: String)
+
+# zones
+GET		/compute/v1/projects/:project/zones/:zone		controllers.ZonesController.get(project: String, zone: String)
+GET		/compute/v1/projects/:project/zones				controllers.ZonesController.list(project: String)
+
+# Map static resources from the /public folder to the /assets URL path
+GET     /assets/*file               					controllers.Assets.versioned(path="/public", file: Asset)
+
+
